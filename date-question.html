@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>For Shreyas</title>
+        <title>Date Question</title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <!-- Inline I LOVE YOU Text -->
-        <div class="container">
-            <span class="text">I</span>
-            <div class="heart"></div>
-            <span class="text">YOU</span>
+        <!-- Embed GIF -->
+        <div class="gif-container">
+            <iframe src="https://giphy.com/embed/fvN5KrNcKKUyX7hNIA" width="480" height="442" style="border: none;" frameBorder="0" allowFullScreen></iframe>
+        </div>
+
+        <!-- Main Content -->
+        <h1>Wanna go on a date this weekend?</h1>
+
+        <!-- Buttons -->
+        <div class="button-container">
+            <button id="yesButton">Yes</button>
+            <button id="noButton">No</button>
         </div>
 
         <!-- Sparkles Container -->
-        <div class="particle-container"></div>    
-
-        <!-- Button -->
-        <button id="clickMeButton">Click Me!</button>
+        <div class="particle-container"></div>
 
         <!-- Sparkles Script -->
         <script>
@@ -39,8 +43,12 @@
 
         <!-- Page-Specific Script -->
         <script>
-            document.getElementById('clickMeButton').addEventListener('click', function () {
-                window.location.href = 'date-question.html'; // Navigate to the next page
+            document.getElementById('yesButton').addEventListener('click', function () {
+                window.location.href = 'date-options.html'; // Navigate to the date options page
+            });
+
+            document.getElementById('noButton').addEventListener('click', function () {
+                alert("I wanna see you stop :(");
             });
         </script>
     </body>
